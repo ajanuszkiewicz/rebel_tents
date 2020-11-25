@@ -58,13 +58,13 @@ export default function Quote() {
           </select>
         <div className="mt-8">
           <button
-            className="rounded-full py-3 px-6 p-4 mr-4 rounded bg-green text-white font-bold"
+            className="rounded-full py-3 px-6 p-4 mr-4 bg-green text-white font-bold"
             type="submit"
           >
             Send
           </button>
           <input
-            className="rounded-full py-3 px-6 p-4  rounded bg-green text-white font-bold"
+            className="rounded-full py-3 px-6 p-4 bg-green text-white font-bold"
             type="reset"
             value="Clear"
           />
