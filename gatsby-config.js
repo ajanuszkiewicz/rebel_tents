@@ -6,5 +6,17 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: 'Rebel Tents',
+  },
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography',
+      },
+    },
+    `gatsby-plugin-postcss`,
+    'gatsby-plugin-fontawesome-css',
+  ],
 }

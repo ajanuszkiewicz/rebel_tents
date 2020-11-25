@@ -1,0 +1,19 @@
+html {
+    background-color: white;
+  }
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+        @apply mb-8;
+    }
+    h2 {
+        @apply text-xl;
+        @apply mt-4;
+        @apply mb-2;
+    }
+    p {
+        @apply mb-2;
+    }
+}
+
