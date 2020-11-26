@@ -4,7 +4,7 @@ export default function Quote() {
   return (
     <div>
       <form method="post" action="#">
-        <label className="block mb-2 mb-2">
+        <label className="block mb-2">
           Name
         </label>
         <input type="text" name="name" id="name" />
