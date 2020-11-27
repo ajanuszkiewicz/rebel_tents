@@ -8,24 +8,35 @@ import caro1 from "../images/carousel/pitched.jpg"
 import caro2 from "../images/carousel/Banner-Image-1.jpg"
 import caro3 from "../images/carousel/eventphotos.jpg"
 
+
 const flickityOptions = {
   initialIndex: 0,
   pageDots: false,
+  wrapAround: true,
+  fade: true
 }
 
 function Carousel() {
   return (
     <Flickity
-      className={'carousel'} // default ''
+      className={'container'} // default ''
       elementType={'div'} // default 'div'
       options={flickityOptions} // takes flickity options {}
       disableImagesLoaded={false} // default false
       reloadOnUpdate // default false
       static // default false
     >
-      <img src={caro1}/>
-      <img src={caro2}/>
-      <img src={caro3}/>
+
+        <div className="carousel-cell">
+          <img src={caro1} alt=""/>
+        </div>
+        <div className="carousel-cell">
+          <img src={caro2} alt=""/>
+        </div>
+        <div className="carousel-cell">
+          <img src={caro3} alt=""/>
+        </div>
+
     </Flickity>
   )
 }
@@ -36,9 +47,9 @@ export default function Home() {
       <div className="h-0 invisible mb-8 lg:visible lg:h-auto">
       <Carousel/>
       </div>
-      <div className="flex flex-wrap lg:flex-nowrap mb-8 pr-8 pl-8">
-        <div className="lg:pr-6 lg:mt-14">
-          <h1>Tent Rentals</h1>
+      <div className="container flex flex-wrap lg:flex-nowrap mb-8 pr-8 pl-8">
+        <div className="lg:pr-6 lg:mt-16">
+          <h1 className="mb-8">Tent Rentals</h1>
           <p>
             Rebel Tents will help make your event a success. We have the tents
             and accessories you need for any party, wedding, or large corporate
@@ -82,7 +93,7 @@ export default function Home() {
           </p>
         </div>
         <div className="bg-green-lighter p-8 rounded-lg flex-grow mt-8">
-          <h1>Get A Quote</h1>
+          <h1 className="mb-8">Get A Quote</h1>
           <Quote></Quote>
         </div>
       </div>
