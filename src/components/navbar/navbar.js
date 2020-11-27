@@ -3,6 +3,7 @@ import NavbarLinks from "./navbarlinks"
 import Logo from "./logo"
 import styled from 'styled-components'
 
+
 const Navigation = styled.nav`
   height: 8em;
   display: flex;
