@@ -1,54 +1,33 @@
 import React from "react"
+import {Helmet} from "react-helmet"
+
 import Layout from "../components/layout"
 import Quote from "../components/quote"
-import Flickity from 'react-flickity-component'
-import "../styles/flickity.css"
 
-import caro1 from "../images/carousel/pitched.jpg"
-import caro2 from "../images/carousel/Banner-Image-1.jpg"
-import caro3 from "../images/carousel/eventphotos.jpg"
-
-
-const flickityOptions = {
-  initialIndex: 0,
-  pageDots: false,
-  wrapAround: true,
-  fade: true
-}
-
-function Carousel() {
-  return (
-    <Flickity
-      className={'container'} // default ''
-      elementType={'div'} // default 'div'
-      options={flickityOptions} // takes flickity options {}
-      disableImagesLoaded={false} // default false
-      reloadOnUpdate // default false
-      static // default false
-    >
-
-        <div className="carousel-cell">
-          <img src={caro1} alt=""/>
-        </div>
-        <div className="carousel-cell">
-          <img src={caro2} alt=""/>
-        </div>
-        <div className="carousel-cell">
-          <img src={caro3} alt=""/>
-        </div>
-
-    </Flickity>
-  )
-}
+import car1 from "../images/carousel/1.jpg"
+import car2 from "../images/carousel/2.jpg"
+import car3 from "../images/carousel/3.jpg"
+import car4 from "../images/carousel/4.jpg"
 
 export default function Home() {
   return (
     <Layout>
-      <div className="h-0 invisible mb-8 lg:visible lg:h-auto">
-      <Carousel/>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Rebel Tents - Tent rentals in Ottawa and the surrounding area
+        </title>
+        <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+        <meta
+          name="description"
+          content="Rebel Tents has tents for all occasions like weddings, corporate events, winter events, and more."
+        />
+      </Helmet>
+      <div className="h-0 flex justify-center items-center invisible mb-8 lg:visible lg:h-auto bg-gray-lighter">
+        <img src={car1} className="h-full" />
       </div>
-      <div className="container flex flex-wrap lg:flex-nowrap mb-8 pr-8 pl-8">
-        <div className="lg:pr-6 lg:mt-16">
+      <div className="container flex flex-wrap lg:flex-nowrap mb-8 px-8">
+        <div className="lg:pr-6 lg:mt-16 flex-initial">
           <h1 className="mb-8">Tent Rentals</h1>
           <p>
             Rebel Tents will help make your event a success. We have the tents
@@ -92,8 +71,8 @@ export default function Home() {
             helping hand. Please contact us for details.
           </p>
         </div>
-        <div className="bg-green-lighter p-8 rounded-lg flex-grow mt-8">
-          <h1 className="mb-8">Get A Quote</h1>
+        <div className="bg-green-lighter p-8 rounded-lg mt-8 flex-grow lg:flex-shrink-0">
+          <h1 className="mb-8 text-center">Get A Quote</h1>
           <Quote></Quote>
         </div>
       </div>

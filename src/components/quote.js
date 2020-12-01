@@ -8,28 +8,28 @@ export default function Quote() {
           <label className="block mb-2">
             Name
           </label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
         </div>
         
         <div>
           <label className="block mb-2 pt-8">
             Email
           </label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
         </div>
         
         <div>
           <label className="block mb-2 pt-8">
             Phone
           </label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
         </div>
        
         <div>
           <label className="block mb-2 pt-8">
             Type of Event
           </label>
-          <select id="cars" name="cars">
+          <select id="cars" name="cars" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent">
               <option value="volvo">Backyard Party</option>
               <option value="saab">Wedding</option>
               <option value="fiat">Corporate Event</option>
@@ -44,14 +44,14 @@ export default function Quote() {
           <label className="block mb-2 pt-8">
             Event Date
           </label>
-          <input type="date" name="date" id="date" />
+          <input type="date" name="date" id="date" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
         </div>
         
         <div>
           <label className="block mb-2 pt-8">
             Event Region
           </label>
-          <select id="cars" name="cars">
+          <select id="cars" name="cars" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" >
               <option value="volvo">Ottawa</option>
               <option value="saab">Perth</option>
               <option value="fiat">Calabogie</option>
@@ -67,7 +67,7 @@ export default function Quote() {
           <label for="cars" className="block mb-2 pt-8">
             How many guests?
           </label>
-          <select id="cars" name="cars">
+          <select id="cars" name="cars" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" >
               <option value="volvo">1-50</option>
               <option value="saab">51-100</option>
               <option value="fiat">101-150</option>

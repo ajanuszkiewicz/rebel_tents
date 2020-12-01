@@ -1,5 +1,11 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enable: true,
+    content: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
+    options: {
+      safelist: ['fa-ul', 'fa-li'],
+    }
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

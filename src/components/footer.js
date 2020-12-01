@@ -1,11 +1,13 @@
 import React from "react"
 import assoc from "../images/rebel-assoc.png"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faLeaf } from "@fortawesome/free-solid-svg-icons"
 library.add(fab, faLeaf)
+
 
 export default function Footer() {
   return (
@@ -28,36 +30,36 @@ export default function Footer() {
           <h3 className="text-lg mb-4 border-b-2 border-gray-600 pb-4">
             Rentals
           </h3>
-          <ul className="list-disc list-inside" class="fa-ul">
+          <ul className="list-inside fa-ul">
             <li>
-              <span class="fa-li">
+              <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
-              Backyard Parties
+              <Link to="/tents/backyard-parties" className="hover:underline">Backyard Parties</Link>
             </li>
             <li>
-              <span class="fa-li">
+              <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
-              Weddings
+              <Link to="/tents/weddings" className="hover:underline">Weddings</Link>
             </li>
             <li>
-              <span class="fa-li">
+              <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
-              Festivals & Fairs
+              <Link to="/tents/festivals-and-fairs" className="hover:underline">Festivals & Fairs</Link>
             </li>
             <li>
-              <span class="fa-li">
+              <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
-              Corporate Events
+              <Link to="/tents/corporate-events" className="hover:underline">Corporate Events</Link>
             </li>
             <li>
-              <span class="fa-li">
+              <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
-              Warehousing & Construction
+              <Link to="/tents/warehousing-and-construction" className="hover:underline">Warehousing & Construction</Link>
             </li>
           </ul>
         </div>
@@ -65,24 +67,26 @@ export default function Footer() {
           <h3 className="text-lg mb-4 border-b-2 border-gray-600 pb-4">
             About Rebel
           </h3>
-          <ul className="list-disc list-inside" class="fa-ul">
+          <ul className="list-inside fa-ul">
             <li>
-              <span class="fa-li">
+              <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
-              About Us
+              <Link to="/about-us" className="hover:underline">About Us</Link>
             </li>
-            <li>
-              <span class="fa-li">
+            {/* <li>
+              <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
               Community
-            </li>
+            </li> */}
             <li>
-              <span class="fa-li">
+              <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
+              <Link to="/get-a-quote" className="hover:underline">
               Get A Quote
+              </Link>
             </li>
           </ul>
         </div>
@@ -120,7 +124,7 @@ export default function Footer() {
               Rebel Tents is a proud member of the Canadian Rental Association
               and American Rental Association.
             </p>
-            <div className="flex justify-center pb-8">
+            <div className="flex justify-center lg:justify-start pb-8">
               <img
                 src={assoc}
                 alt="Rebel Tents is a CRA and ARA memeber."
@@ -139,7 +143,8 @@ export default function Footer() {
             >
               <FontAwesomeIcon
                 icon={["fab", "facebook"]}
-                className="text-white text-4xl hover:text-green"
+                className="text-white hover:text-green"
+                size="3x"
               />
             </a>
           </div>

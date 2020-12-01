@@ -42,9 +42,9 @@ const NavbarLinks = () => {
   return (
     <>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/404">Tents</NavItem>
+      <NavItem to="/tents/">Tents</NavItem>
       <NavItem to="/party-rentals">Party Rentals</NavItem>
-      <NavItem to="/404">Get A Quote</NavItem>
+      <NavItem to="/get-a-quote">Get A Quote</NavItem>
     </>
   )
 }

@@ -18,8 +18,8 @@ const Logo = () => {
     query {
         file(name: { eq: "rebel-logo" }, extension: { eq: "png" }) {
         childImageSharp {
-          fluid(maxWidth: 140, pngQuality: 80) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 140, pngQuality: 80) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
@@ -27,8 +27,8 @@ const Logo = () => {
   `)
   return (
     <LogoWrap as={Link} to="/">
-    {/* <Img fluid={data.file.childImageSharp.fluid} alt="logo" /> */}
-    <img src={logo} alt="Logo" className="" />
+    <Img fixed={data.file.childImageSharp.fixed} alt="logo" />
+    {/* <img src={logo} alt="Logo" className="m-0" /> */}
   </LogoWrap>
   )
 }
