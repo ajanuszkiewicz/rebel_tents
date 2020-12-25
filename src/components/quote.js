@@ -3,7 +3,7 @@ import React from "react"
 export default function Quote() {
   return (
     <div>
-      <form method="post" action="#">
+      <form method="post" action="https://formspree.io/f/xvovvrne">
         <div>
           <label className="block mb-2">
             Name
@@ -22,21 +22,21 @@ export default function Quote() {
           <label className="block mb-2 pt-8">
             Phone
           </label>
-          <input type="email" name="email" id="email" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
+          <input type="phone" name="phone" id="phone" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
         </div>
        
         <div>
           <label className="block mb-2 pt-8">
             Type of Event
           </label>
-          <select id="cars" name="cars" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent">
-              <option value="volvo">Backyard Party</option>
-              <option value="saab">Wedding</option>
-              <option value="fiat">Corporate Event</option>
-              <option value="audi">Festivals & Fairs</option>
-              <option value="audi">Warehousing & Construction</option>
-              <option value="audi">Winter Event</option>
-              <option value="audi">Other</option>
+          <select id="event_type" name="event_type" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent">
+              <option value="Backyard Party">Backyard Party</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Corporate Event">Corporate Event</option>
+              <option value="Festivals & Fairs">Festivals & Fairs</option>
+              <option value="Warehousing & Construction">Warehousing & Construction</option>
+              <option value="Winter Event">Winter Event</option>
+              <option value="Other">Other</option>
             </select>
         </div>
       
@@ -44,36 +44,36 @@ export default function Quote() {
           <label className="block mb-2 pt-8">
             Event Date
           </label>
-          <input type="date" name="date" id="date" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
+          <input type="date" name="event_date" id="date" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
         </div>
         
         <div>
           <label className="block mb-2 pt-8">
             Event Region
           </label>
-          <select id="cars" name="cars" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" >
-              <option value="volvo">Ottawa</option>
-              <option value="saab">Perth</option>
-              <option value="fiat">Calabogie</option>
-              <option value="audi">Pembroke</option>
-              <option value="audi">Montreal</option>
-              <option value="audi">Kingston</option>
-              <option value="audi">Brockville</option>
-              <option value="audi">Other</option>
+          <select id="event_location" name="event_location" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" >
+              <option value="Ottawa">Ottawa</option>
+              <option value="Perth">Perth</option>
+              <option value="Calabogie">Calabogie</option>
+              <option value="Pembroke">Pembroke</option>
+              <option value="Montreal">Montreal</option>
+              <option value="Kingston">Kingston</option>
+              <option value="Brockville">Brockville</option>
+              <option value="Other">Other</option>
             </select>
         </div>
       
         <div>
-          <label for="cars" className="block mb-2 pt-8">
+          <label for="guests" className="block mb-2 pt-8">
             How many guests?
           </label>
-          <select id="cars" name="cars" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" >
-              <option value="volvo">1-50</option>
-              <option value="saab">51-100</option>
-              <option value="fiat">101-150</option>
-              <option value="audi">151-300</option>
-              <option value="audi">301-500</option>
-              <option value="audi">500+</option>
+          <select id="guests" name="guests" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" >
+              <option value="1-50">1-50</option>
+              <option value="51-100">51-100</option>
+              <option value="101-150">101-150</option>
+              <option value="151-300">151-300</option>
+              <option value="301-500">301-500</option>
+              <option value="500+">500+</option>
             </select>
         </div>
   
