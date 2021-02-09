@@ -30,6 +30,15 @@ module.exports = {
         path: `${__dirname}/src/images/carousel/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-BGWK1QY6X6", // Google Analytics / GA
+        ],
+      },
+    },
     `gatsby-plugin-postcss`,
     'gatsby-plugin-fontawesome-css',
     `gatsby-transformer-sharp`,
