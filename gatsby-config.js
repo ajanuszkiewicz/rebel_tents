@@ -11,6 +11,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `rebeltents.com`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
