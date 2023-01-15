@@ -18,9 +18,7 @@ export default function Footer() {
             Service Areas
           </h3>
           <p>
-            We proudly serve a majority of Eastern Ontario including but
-            definitely not limited to; Ottawa, Gatineau, Hull, Carleton Place,
-            Smiths Falls, Kingston, and Montreal.
+            We proudly serve a majority of Eastern Ontario.
           </p>
           <p className="pt-4">
             Reach out to us and we'll let you know if we can reach your event!
