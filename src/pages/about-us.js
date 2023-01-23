@@ -66,10 +66,10 @@ export default function Home() {
             />
             <Card
               cardImg={KieraImg}
-              cardText="Kiera is the lovely voice you hear on the phone, the one answering emails at all hours, and the one who coordinates everything behind the scenes. A Pinterest addict through-and-through, Kiera is an expert at finding and suggesting décor to match any vision or theme."
+              cardText="Kiera is the lovely voice you hear on the phone, the one answering emails at all hours, and the one who coordinates everything behind the scenes."
             />
-            <Card cardImg={OliImg} cardText="Kiera and Jer’s right-hand-man, Oliver was born to work at Rebel Tents (kidding?). When this kid has his work boots and gloves on, watch out! He’s bound to start helping out and hauling things around."/>
-            <Card cardImg={MikeImg} cardText="As a contractor, electrician, and perfectionist, Mike is the guy you want around when you have a vision but can’t quite get everything in line. He’s built our bars, wired our chandeliers, and crafted some beautiful pieces in our Rustic collection. Mike’s also the guy who will help get past any obstacles at not-quite-level venues."/>
+            {/* <Card cardImg={OliImg} cardText="Kiera and Jer’s right-hand-man, Oliver was born to work at Rebel Tents (kidding?). When this kid has his work boots and gloves on, watch out! He’s bound to start helping out and hauling things around."/> */}
+            <Card cardImg={MikeImg} cardText="As a contractor, electrician, and perfectionist, Mike is the guy you want around when you have a vision but can’t quite get everything in line. Mike’s also the guy who will help get past any obstacles at not-quite-level venues."/>
           </div>
         </div>
         <CallToAction />
