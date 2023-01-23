@@ -24,7 +24,7 @@ export default function Home() {
         />
       </Helmet>
       <div className="h-0 flex justify-center items-center invisible mb-8 lg:visible lg:h-auto bg-gray-lighter">
-        <img src={car1} className="h-full" />
+        <img src={car1} className="-mb-0" />
       </div>
       <div className="container flex flex-wrap lg:flex-nowrap mb-8 px-8">
         <div className="lg:pr-6 lg:mt-16 flex-initial">
