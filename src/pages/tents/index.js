@@ -56,11 +56,11 @@ export default function Home() {
               cardPage="warehousing-and-construction"
               cardImg={WarehouseImg}
             />
-            <TentCard
+            {/* <TentCard
               cardTitle="Winter Tents"
               cardPage="winter-tents"
               cardImg={WinterImg}
-            />
+            /> */}
           </div>
         </div>
         <CallToAction />
