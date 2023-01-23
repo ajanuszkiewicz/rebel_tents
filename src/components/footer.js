@@ -78,6 +78,14 @@ export default function Footer() {
               </span>
               Community
             </li> */}
+                        <li>
+              <span className="fa-li">
+                <FontAwesomeIcon icon="leaf" className="text-green" />
+              </span>
+              <Link to="/work-for-rebel-tents" className="hover:underline">
+              Work for Rebel Tents
+              </Link>
+            </li>
             <li>
               <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
