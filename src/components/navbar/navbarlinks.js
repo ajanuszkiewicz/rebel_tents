@@ -38,13 +38,41 @@ const NavItem = styled(Link)`
     z-index: 6;
   }
 `
+
+const NavButton = styled(Link)`
+background-color: #4f9a1b;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 9999px;
+  width:85%;
+
+  :hover {
+    background-color: #62c021;
+  }
+
+  @media (max-width: 768px) {
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    z-index: 6;
+  }
+`
+
 const NavbarLinks = () => {
   return (
     <>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/tents/">Tents</NavItem>
       <NavItem to="/party-rentals">Party Rentals</NavItem>
-      <NavItem to="/get-a-quote">Get A Quote</NavItem>
+      <NavItem to="/work-for-rebel-tents">Work For Rebel Tents</NavItem>
+      <NavButton to="/get-a-quote">Get A Quote</NavButton>
     </>
   )
 }
