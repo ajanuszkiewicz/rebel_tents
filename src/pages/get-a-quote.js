@@ -20,7 +20,7 @@ export default function Contact() {
           email us, or kick it old school and give us a call.
         </p>
       </div>
-      <div className="container lg:w-1/2 bg-gray-lighter p-8 lg:rounded-lg">
+      <div className="container lg:w-1/2 bg-green-lighter p-8 lg:rounded-lg">
         <Quote/>
       </div>
       <div className="container grid lg:grid-cols-2 mb-8 p-8">
@@ -32,11 +32,19 @@ export default function Contact() {
         <div>
           <h2>Social Media</h2>
           <p className="mb-4">We embrace all things digital. Like us on Facebook and follow us on Twitter to receive the latest Rebel Tents news and promotions. We even post the odd picture so you can see what life is like at Rebel Tents (we keep the post-work-beer, and barefoot photos for ourselves though).</p>
+          <div className="text-center order-3 lg:text-left lg:w-1/3 lg:order-3">
+            <a
+              href="https://www.facebook.com/RebelTents/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
           <FontAwesomeIcon
                 icon={["fab", "facebook"]}
                 className="text-green hover:text-green"
                 size="3x"
               />
+            </a>
+          </div>
         </div>
       </div>
     </Layout>
