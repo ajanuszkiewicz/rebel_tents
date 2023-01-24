@@ -3,13 +3,27 @@
         @apply text-4xl;
         @apply font-bold;
     }
+
     h2 {
         @apply text-xl;
         @apply mt-4;
         @apply mb-2;
     }
+
     p {
         @apply mb-2;
     }
-}
 
+    input[type="date"] {
+        display: block;
+
+        /* Solution 1 */
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        min-height: 1.2em;
+
+        /* Solution 2 */
+        /* min-width: 96%; */
+    }
+
+}
