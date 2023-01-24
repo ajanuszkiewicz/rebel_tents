@@ -139,7 +139,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="order-1 pb-8 text-center lg:w-1/3 lg:order-2">
-            <p>© 2016, Rebel Tents. All rights reserved.</p>
+            <p>© 2023, Rebel Tents. All rights reserved.</p>
           </div>
           <div className="text-center order-3 lg:text-right lg:w-1/3 lg:order-3">
             <a
