@@ -23,7 +23,7 @@ const MyPage = ({ data }) => {
       <div className="container mb-8 pr-8 pl-8">
         <div className="lg:pr-6 lg:mt-0">
           <p>
-          Meet + eat + relax is a great formula for any party, so we’ve got you covered (literally). We have everything from flooring, lighting, interior draping, tent liners, pole covers, fans, heating and cooling systems.
+          Meet + eat + relax is a great formula for any party. From flooring, tent liners, heating, to lighting, we’ve got you covered (literally).
           </p>
           <p>
           So what don’t we do? Well… we are first and foremost a tent rental company, so our ancillary services are only available with the rental of one or more tents. Though we don’t mind if it’s a big tent or a small tent.
