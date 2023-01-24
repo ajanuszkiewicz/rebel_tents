@@ -15,12 +15,6 @@ export default function Home() {
         <Topper headerText="About Us" />
         <div className="container mb-8 pr-8 pl-8">
           <div className="lg:pr-6 lg:mt-0">
-            <p>
-              Rebel Tents has been a family owned and operated tent and event
-              rental company since 2011. With three (and a half) main staff of
-              varying–but flawlessly interlocking–backgrounds, we’ll make sure
-              you’re covered.
-            </p>
             <h2>OUR COMMITMENT TO YOU</h2>
             <p>
               Rebel Tents & Event Rentals is dedicated to providing you with
