@@ -32,7 +32,7 @@ export default function Home() {
           <p>
             Rebel Tents will help make your event a success. We have the tents
             and accessories you need for any party, wedding, or large corporate
-            event. We are Eastern Ontario and Western Quebec’s preferred tent
+            event. We are Eastern Ontario's preferred tent
             rental provider because we love what we do, and it shows in our
             work.
           </p>
