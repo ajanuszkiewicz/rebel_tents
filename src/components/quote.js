@@ -1,6 +1,17 @@
 import React from "react"
+import { usePlacesWidget } from "react-google-autocomplete";
 
 export default function Quote() {
+  const { ref } = usePlacesWidget({
+    apiKey: 'AIzaSyD89ypmSI60kgxiOm9gbkYpgWs5-ZfhdP0',
+    onPlaceSelected: (place) => {
+      console.log(place);
+    },
+    options: {
+      types: ["geocode"],
+      componentRestrictions: { country: "ca" },
+    },
+  });
   return (
     <div>
       <form method="post" action="https://formspree.io/f/xvovvrne">
@@ -62,7 +73,12 @@ export default function Quote() {
               <option value="Other">Other</option>
             </select>
         </div>
-      
+        <div>
+          <label className="block mb-2 pt-8">
+            Event Address
+          </label>
+          <input type="text" name="event_address" id="address" ref={ref} style={{ width: "100%" }} defaultValue="" placeholder="Please enter an address" />
+        </div>
         <div>
           <label for="guests" className="block mb-2 pt-8">
             How many guests?

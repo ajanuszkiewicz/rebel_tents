@@ -38,6 +38,13 @@ export default function Quote() {
 
         <div>
           <label className="block mb-2 pt-8">
+            Optional Message
+          </label>
+          <textarea name="message" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent"></textarea>
+        </div>
+
+        <div>
+          <label className="block mb-2 pt-8">
             Upload Resume
           </label>
           <input type="file" name="upload"/>
