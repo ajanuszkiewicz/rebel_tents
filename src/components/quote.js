@@ -1,5 +1,5 @@
 import React from "react"
-import { usePlacesWidget } from "react-google-autocomplete";
+import { usePlacesWidget } from "react-google-autocomplete"
 
 export default function Quote() {
   const { ref } = usePlacesWidget({
@@ -19,28 +19,31 @@ export default function Quote() {
           <label className="block mb-2">
             Name
           </label>
-          <input type="text" name="name" id="name" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
+          <input type="text" name="name" id="name" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" required/>
+          <small className="text-red-500">* Required</small>
         </div>
         
         <div>
           <label className="block mb-2 pt-8">
             Email
           </label>
-          <input type="email" name="email" id="email" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
+          <input type="email" name="email" id="email" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" required/>
+          <small className="text-red-500">* Required</small>
         </div>
         
         <div>
           <label className="block mb-2 pt-8">
             Phone
           </label>
-          <input type="phone" name="phone" id="phone" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" />
+          <input type="phone" name="phone" id="phone" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" required/>
+          <small className="text-red-500">* Required</small>
         </div>
        
         <div>
           <label className="block mb-2 pt-8">
             Type of Event
           </label>
-          <select id="event_type" name="event_type" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent">
+          <select id="event_type" name="event_type" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" required>
               <option value="Backyard Party">Backyard Party</option>
               <option value="Wedding">Wedding</option>
               <option value="Corporate Event">Corporate Event</option>
@@ -48,7 +51,8 @@ export default function Quote() {
               <option value="Warehousing & Construction">Warehousing & Construction</option>
               <option value="Winter Event">Winter Event</option>
               <option value="Other">Other</option>
-            </select>
+          </select>
+          <small className="text-red-500">* Required</small>
         </div>
       
         <div>
@@ -62,7 +66,7 @@ export default function Quote() {
           <label className="block mb-2 pt-8">
             Event Region
           </label>
-          <select id="event_location" name="event_location" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" >
+          <select id="event_location" name="event_location" className="w-full rounded border border-transparent focus:outline-none focus:ring-2 focus:ring-green focus:border-transparent" required>
               <option value="Ottawa">Ottawa</option>
               <option value="Perth">Perth</option>
               <option value="Calabogie">Calabogie</option>
@@ -72,6 +76,7 @@ export default function Quote() {
               <option value="Brockville">Brockville</option>
               <option value="Other">Other</option>
             </select>
+            <small className="text-red-500">* Required</small>
         </div>
         <div>
           <label className="block mb-2 pt-8">
