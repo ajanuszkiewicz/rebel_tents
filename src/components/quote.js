@@ -14,7 +14,7 @@ export default function Quote() {
   });
   return (
     <div>
-      <form method="post" action="https://formspree.io/f/xvovvrne">
+      <form method="post" action="https://formspree.io/f/xvovvrne" netlify>
         <div>
           <label className="block mb-2">
             Name
