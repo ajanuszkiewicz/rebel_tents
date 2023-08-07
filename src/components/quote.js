@@ -41,6 +41,7 @@ export default function Quote() {
       if (response.ok) {
         // Handle successful form submission
         alert("Form submitted successfully!");
+        document.getElementById("quote").reset(); 
         // You can perform any other actions here, such as redirecting the user to a thank-you page.
       } else {
         // Handle errors if the form submission was not successful
@@ -55,7 +56,7 @@ export default function Quote() {
   
   return (
     <div>
-      <form onSubmit={handleFormSubmit} method="post" action="https://formspree.io/f/xvovvrne">
+      <form id="quote" onSubmit={handleFormSubmit} method="post" action="https://formspree.io/f/xvovvrne">
         <div>
           <label className="block mb-2">
             Name
