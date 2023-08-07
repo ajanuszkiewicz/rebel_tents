@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useRef } from "react"
 import { usePlacesWidget } from "react-google-autocomplete"
+import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Quote() {
   const { ref } = usePlacesWidget({
@@ -12,9 +13,49 @@ export default function Quote() {
       componentRestrictions: { country: "ca" },
     },
   });
+
+  const recaptchaRef = useRef();
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const recaptchaResponse = recaptchaRef.current.getValue();
+    if (!recaptchaResponse) {
+      // Handle the case when reCAPTCHA is not solved
+      alert("Please complete the reCAPTCHA verification.");
+      return;
+    }
+  
+    // The reCAPTCHA is solved, continue with the form submission.
+    const formData = new FormData(event.target); // Get the form data
+    formData.append("g-recaptcha-response", recaptchaResponse); // Include the reCAPTCHA response in the form data
+  
+    try {
+      const response = await fetch("https://formspree.io/f/xvovvrne", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+  
+      if (response.ok) {
+        // Handle successful form submission
+        alert("Form submitted successfully!");
+        // You can perform any other actions here, such as redirecting the user to a thank-you page.
+      } else {
+        // Handle errors if the form submission was not successful
+        alert("Form submission failed. Please try again later.");
+      }
+    } catch (error) {
+      // Handle network or other errors
+      console.error("Error submitting the form:", error);
+      alert("An error occurred. Please try again later.");
+    }
+  };
+  
   return (
     <div>
-      <form method="post" action="https://formspree.io/f/xvovvrne" netlify>
+      <form onSubmit={handleFormSubmit} method="post" action="https://formspree.io/f/xvovvrne">
         <div>
           <label className="block mb-2">
             Name
@@ -97,7 +138,9 @@ export default function Quote() {
               <option value="500+">500+</option>
             </select>
         </div>
-  
+        <div className='mt-8'>
+        <ReCAPTCHA sitekey="6LdHLyMaAAAAAISKt9T7QmV8AE6hrogeUFZDDAuf" ref={recaptchaRef} size="normal" required={true}/>
+        </div>
         <div className="mt-8">
           <button
             className="rounded-full py-3 px-6 p-4 mr-4 bg-green text-white font-bold"
