@@ -30,7 +30,7 @@ export default function Quote() {
     formData.append("g-recaptcha-response", recaptchaResponse); // Include the reCAPTCHA response in the form data
   
     try {
-      const response = await fetch("https://formspree.io/f/xvovvrne", {
+      const response = await fetch("https://formspree.io/f/mleyjrvy", {
         method: "POST",
         body: formData,
         headers: {
