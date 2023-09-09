@@ -20,11 +20,11 @@ export default function Quote() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     const recaptchaResponse = recaptchaRef.current.getValue();
-    if (!recaptchaResponse) {
-      // Handle the case when reCAPTCHA is not solved
-      alert("Please complete the reCAPTCHA verification.");
-      return;
-    }
+    // if (!recaptchaResponse) {
+    //   // Handle the case when reCAPTCHA is not solved
+    //   alert("Please complete the reCAPTCHA verification.");
+    //   return;
+    // }
   
     // The reCAPTCHA is solved, continue with the form submission.
     const formData = new FormData(event.target); // Get the form data
