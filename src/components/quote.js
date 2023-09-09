@@ -125,7 +125,7 @@ export default function Quote() {
           <label className="block mb-2 pt-8">
             Event Address
           </label>
-          <GooglePlacesAutocomplete apiKey="AIzaSyD89ypmSI60kgxiOm9gbkYpgWs5-ZfhdP0"/>
+          <input type="text" name="event_address" id="address" style={{ width: "100%" }} placeholder="Please enter an address"/>
           {/* <input type="text" name="event_address" id="address" ref={ref} style={{ width: "100%" }} defaultValue="" placeholder="Please enter an address" /> */}
         </div>
         <div>
