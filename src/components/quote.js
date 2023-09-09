@@ -1,18 +1,19 @@
 import React, { useRef } from "react"
 import { usePlacesWidget } from "react-google-autocomplete"
+import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Quote() {
-  const { ref } = usePlacesWidget({
-    apiKey: 'AIzaSyD89ypmSI60kgxiOm9gbkYpgWs5-ZfhdP0',
-    onPlaceSelected: (place) => {
-      console.log(place);
-    },
-    options: {
-      types: ["geocode"],
-      componentRestrictions: { country: "ca" },
-    },
-  });
+  // const { ref } = usePlacesWidget({
+  //   apiKey: 'AIzaSyD89ypmSI60kgxiOm9gbkYpgWs5-ZfhdP0',
+  //   onPlaceSelected: (place) => {
+  //     console.log(place);
+  //   },
+  //   options: {
+  //     types: ["geocode"],
+  //     componentRestrictions: { country: "ca" },
+  //   },
+  // });
 
   const recaptchaRef = useRef();
 
@@ -124,7 +125,8 @@ export default function Quote() {
           <label className="block mb-2 pt-8">
             Event Address
           </label>
-          <input type="text" name="event_address" id="address" ref={ref} style={{ width: "100%" }} defaultValue="" placeholder="Please enter an address" />
+          <GooglePlacesAutocomplete apiKey="AIzaSyD89ypmSI60kgxiOm9gbkYpgWs5-ZfhdP0"/>
+          {/* <input type="text" name="event_address" id="address" ref={ref} style={{ width: "100%" }} defaultValue="" placeholder="Please enter an address" /> */}
         </div>
         <div>
           <label for="guests" className="block mb-2 pt-8">
