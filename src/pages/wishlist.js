@@ -22,7 +22,7 @@ export default function Home() {
             nomodule=""
             src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"
           ></script>
-          <script>
+          <script type="module">
             {`
               document.addEventListener("DOMContentLoaded", function() {
                 const gsproWishlistConfig = document.createElement("gspro-wishlist-config");
