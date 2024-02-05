@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { StrictMode, useRef } from "react"
 import { usePlacesWidget } from "react-google-autocomplete"
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import ReCAPTCHA from "react-google-recaptcha"
@@ -142,7 +142,7 @@ export default function Quote() {
             </select>
         </div>
         <div className='mt-8'>
-        <ReCAPTCHA sitekey="6LdHLyMaAAAAAISKt9T7QmV8AE6hrogeUFZDDAuf" ref={recaptchaRef} size="normal" required={true}/>
+
         </div>
         <div className="mt-8">
           <button
@@ -158,6 +158,10 @@ export default function Quote() {
           />
         </div>
       </form>
+      <StrictMode>
+          <ReCAPTCHA sitekey="6LdHLyMaAAAAAISKt9T7QmV8AE6hrogeUFZDDAuf" ref={recaptchaRef} size="normal" required={true}/>
+
+          </StrictMode>
     </div>
   )
 }

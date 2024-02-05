@@ -45,6 +45,20 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.rebeltents.com",
+        sitemap: "https://rebeltents.com/sitemap",
+        policy: [
+          {
+            userAgent: "*",
+            allow: ["/"],
+            disallow: [],
+          }
+        ],
+      },
+    },
     `gatsby-plugin-postcss`,
     'gatsby-plugin-fontawesome-css',
     `gatsby-transformer-sharp`,

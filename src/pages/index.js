@@ -18,7 +18,6 @@ export default function Home() {
           Rebel Tents - Tent rentals in Ottawa and the surrounding area
         </title>
         <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <meta
           name="description"
           content="Rebel Tents has tents for all occasions like weddings, corporate events, winter events, and more."
