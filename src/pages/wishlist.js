@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Topper from "../components/topper"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 
 export default function Home() {
   return (
@@ -20,9 +21,10 @@ export default function Home() {
             `}
           </script>
         </Helmet>
-        <Topper headerText="Testing Page" />
+        <Topper headerText="Event Wishlist" />
         <div className="container mb-8 pr-8 pl-8">
-
+        <p>Use the tool below if you're looking for something specific to make your event special, or if you want to see what kinds of rentals are available from Rebel Tents.</p>
+        <p>In a rush? Get a quick quote from our <Link to="/get-a-quote">quotes page</Link>.</p>
         <gspro-item-gallery></gspro-item-gallery>
         </div>
       </Layout>
