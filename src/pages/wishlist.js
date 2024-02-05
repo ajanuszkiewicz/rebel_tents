@@ -44,11 +44,15 @@ export function Head() {
         nomodule=""
         src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"
       ></Script>
-      <gspro-wishlist-config
-    data-url="https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JT"
-></gspro-wishlist-config>
-
-
+      <Script>
+        {`
+              document.addEventListener("DOMContentLoaded", function() {
+                const gsproWishlistConfig = document.createElement("gspro-wishlist-config");
+                gsproWishlistConfig.setAttribute("data-url", "https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JT");
+                document.head.appendChild(gsproWishlistConfig);
+              });
+            `}
+      </Script>
     </>
   )
 }
