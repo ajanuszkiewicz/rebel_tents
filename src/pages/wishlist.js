@@ -53,9 +53,9 @@ export default function Home() {
           nomodule=""
           src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"
         ></script>
-    <gspro-wishlist-config
-    data-url="https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JT"
-></gspro-wishlist-config>
+        <gspro-wishlist-config
+        data-url="https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JT"
+        ></gspro-wishlist-config>
       </Layout>
     </div>
   )
