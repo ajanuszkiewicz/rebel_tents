@@ -158,10 +158,6 @@ export default function Quote() {
           />
         </div>
       </form>
-      <StrictMode>
-          <ReCAPTCHA sitekey="6LdHLyMaAAAAAISKt9T7QmV8AE6hrogeUFZDDAuf" ref={recaptchaRef} size="normal" required={true}/>
-
-          </StrictMode>
     </div>
   )
 }
