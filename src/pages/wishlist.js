@@ -11,26 +11,8 @@ export default function Home() {
         <Helmet>
         <title>Event Wishlist | Rebel Tents</title>
         <meta name='description' content='Build a wishlist for your next event.' />
-        <script type="module" src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"></script>
-        <script nomodule="" src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"></script>
-        <script>
-          {`
-            console.log("Script executing...");
 
-            // Adding a delay of 2000 milliseconds (2 seconds)
-            setTimeout(function() {
-              console.log("Delay completed. Executing main code...");
-
-              // Your main code here
-              document.addEventListener("DOMContentLoaded", function() {
-                const gsproWishlistConfig = document.createElement("gspro-wishlist-config");
-                gsproWishlistConfig.setAttribute("data-url", "https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JT");
-                document.head.appendChild(gsproWishlistConfig);
-                console.log("gspro-wishlist-config added to head.");
-              });
-            }, 2000); // Adjust the delay time as needed
-          `}
-        </script>
+       
         </Helmet>
         <Topper headerText="Event Wishlist" />
         <div className="container mb-8 pr-8 pl-8">
@@ -40,6 +22,21 @@ export default function Home() {
         </div>
       </Layout>
     </div>
+  )
+}
+
+export function Head() {
+  return (
+<>
+<script type="module" src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"></script>
+        <gspro-wishlist-config
+data-url="https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JTY"
+></gspro-wishlist-config>
+        
+        </>
+
+
   )
 }
 
