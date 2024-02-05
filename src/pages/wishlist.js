@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Topper from "../components/topper"
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
+import { Link, Script } from "gatsby"
 
 export default function Home() {
   return (
@@ -35,25 +35,24 @@ export default function Home() {
 
 export function Head() {
   return (
-<>
-<script
-      type="module"
-      src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"
-    ></script>
-    <script>
-      {`
+    <>
+      <Script
+        type="module"
+        src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"
+      ></Script>
+      <Script
+        nomodule=""
+        src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"
+      ></Script>
+      <Script>
+        {`
           document.addEventListener('DOMContentLoaded', function() {
             var wishlistConfig = document.createElement('gspro-wishlist-config');
             wishlistConfig.setAttribute('data-url', 'https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JTY');
             document.body.appendChild(wishlistConfig);
           });
         `}
-    </script>
-        </>
-
+      </Script>
+    </>
   )
 }
