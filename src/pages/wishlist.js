@@ -33,24 +33,10 @@ export default function Home() {
   )
 }
 
-// export function Head() {
-//   return (
-// <>
-// <script type="module" src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"></script>
-//         <script nomodule="" src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"></script>
-//         <gspro-wishlist-config
-// data-url="https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JTY"
-// ></gspro-wishlist-config>
-
-//         </>
-
-//   )
-// }
-
-export const onClientEntry = () => {
-  // Load scripts and initialize gspro-wishlist-config here
-  <>
-    <script
+export function Head() {
+  return (
+<>
+<script
       type="module"
       src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"
     ></script>
@@ -67,5 +53,7 @@ export const onClientEntry = () => {
           });
         `}
     </script>
-  </>
+        </>
+
+  )
 }
