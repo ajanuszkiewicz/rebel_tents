@@ -49,7 +49,7 @@ export default function Home() {
 
 export const onClientEntry = () => {
   // Load scripts and initialize gspro-wishlist-config here
-  ;<>
+  <>
     <script
       type="module"
       src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"
