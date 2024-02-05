@@ -53,13 +53,9 @@ export default function Home() {
           nomodule=""
           src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"
         ></script>
-        <script type="module">
-          {`
-    const gsproWishlistConfig = document.createElement("gspro-wishlist-config");
-    gsproWishlistConfig.setAttribute("data-url", "https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JT");
-    document.head.appendChild(gsproWishlistConfig);
-  `}
-        </script>
+    <gspro-wishlist-config
+    data-url="https://data.goodshuffle.com/vendor/YOUR-PUBLIC-WEBSITE-KEY"
+></gspro-wishlist-config>
       </Layout>
     </div>
   )
