@@ -4,30 +4,6 @@ import Topper from "../components/topper"
 import { Helmet } from "react-helmet"
 import { Link, Script } from "gatsby"
 
-export function Head() {
-  return (
-    <>
-      <Script
-        type="module"
-        src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"
-      ></Script>
-      <Script
-        nomodule=""
-        src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.js"
-      ></Script>
-      <Script>
-        {`
-              document.addEventListener("DOMContentLoaded", function() {
-                const gsproWishlistConfig = document.createElement("gspro-wishlist-config");
-                gsproWishlistConfig.setAttribute("data-url", "https://data.goodshuffle.com/vendor/ZSLncVtdvLKr4REqp6mmM7WmiII6JT");
-                document.head.appendChild(gsproWishlistConfig);
-              });
-            `}
-      </Script>
-    </>
-  )
-}
-
 export default function Home() {
   return (
     <div>
@@ -38,7 +14,7 @@ export default function Home() {
             name="description"
             content="Build a wishlist for your next event."
           />
-          {/* <script
+          <script
             type="module"
             src="https://unpkg.com/@goodshuffle/gspro-wc@0.5.6/dist/gspro-wc/gspro-wc.esm.js"
           ></script>
@@ -54,7 +30,7 @@ export default function Home() {
                 document.head.appendChild(gsproWishlistConfig);
               });
             `}
-          </script> */}
+          </script>
         </Helmet>
         <Topper headerText="Event Wishlist" />
         <div className="container mb-8 pr-8 pl-8">
