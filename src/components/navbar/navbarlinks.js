@@ -71,6 +71,7 @@ const NavbarLinks = () => {
       <NavItem to="/">Home</NavItem>
       <NavItem to="/tents/">Tents</NavItem>
       <NavItem to="/party-rentals">Party Rentals</NavItem>
+      <NavItem to="/wishlist">Wishlist</NavItem>
       <NavItem to="/work-for-rebel-tents">Work For Rebel Tents</NavItem>
       <NavButton to="/get-a-quote">Get A Quote</NavButton>
     </>
