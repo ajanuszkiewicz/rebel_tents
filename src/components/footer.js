@@ -78,12 +78,12 @@ export default function Footer() {
               </span>
               Community
             </li> */}
-                        <li>
+            <li>
               <span className="fa-li">
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
               <Link to="/work-for-rebel-tents" className="hover:underline">
-              Work for Rebel Tents
+                Work for Rebel Tents
               </Link>
             </li>
             <li>
@@ -91,7 +91,7 @@ export default function Footer() {
                 <FontAwesomeIcon icon="leaf" className="text-green" />
               </span>
               <Link to="/get-a-quote" className="hover:underline">
-              Get A Quote
+                Get A Quote
               </Link>
             </li>
           </ul>
@@ -111,8 +111,8 @@ export default function Footer() {
           </p>
           <p className="pt-4">
             phone:{" "}
-            <a href="tel:1-613-821-3131" className="text-green">
-              1-613-821-3131
+            <a href="tel:1-613-552-5003" className="text-green">
+              1-613-552-5003
             </a>
           </p>
           <p className="pt-4">
