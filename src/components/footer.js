@@ -111,8 +111,8 @@ export default function Footer() {
           </p>
           <p className="pt-4">
             phone:{" "}
-            <a href="tel:1-613-552-5003" className="text-green">
-              1-613-552-5003
+            <a href="tel:1-613-821-3131" className="text-green">
+              1-613-821-3131
             </a>
           </p>
           <p className="pt-4">

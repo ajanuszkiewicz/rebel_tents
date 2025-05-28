@@ -21,13 +21,13 @@ export default function Contact() {
         </p>
       </div>
       <div className="container lg:w-1/2 bg-green-lighter p-8 lg:rounded-lg">
-        <Quote/>
+        <Quote />
       </div>
       <div className="container grid lg:grid-cols-2 mb-8 p-8">
         <div>
           <h2>Contact Us</h2>
           <p>Feel free to give us a call with any questions. We can be reached at 1-613-821-3131. We’re open from 9 a.m. – 6 p.m. Monday to Saturday.</p>
-          <p>If there’s an emergency contact Jeremy (613-277-1666) or Kiera (613-552-5003).</p>
+          <p>If there’s an emergency text Kiera at 613-552-5003.</p>
         </div>
         <div>
           <h2>Social Media</h2>
@@ -38,7 +38,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-          <FontAwesomeIcon
+              <FontAwesomeIcon
                 icon={["fab", "facebook"]}
                 className="text-green hover:text-green"
                 size="3x"
